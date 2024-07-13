@@ -1,0 +1,48 @@
+---
+const navItems = [
+  {    
+    title: "Home",
+    label: "home",
+    url:"#",
+  },
+  {    
+    title: "Comunidad",
+    label: "comunidad",
+    url:"/#comunidad",
+  },
+  {    
+    title: "Recursos",
+    label: "recursos",
+    url:"/#recursos",
+  },
+  {    
+    title: "Newsletter",
+    label: "newsletter",
+    url:"/#newsletter",
+  },
+]
+---
+
+<header
+  class="bg-[#e8e4ea]/10 backdrop-blur fixed top-0 z-10 flex items-center justify-center sm:justify-between w-full mx-auto py-4"
+>
+<a href="https://gonzz.life" target="_blank" rel="noopener" class="hidden sm:block">
+    <img src="/logo-3.svg" alt="" class="w-[100px] pl-4">
+</a>
+  <nav
+    class="flex px-3 text-sm font-semibold rounded-full text-[#0f0c11] dark:text-[#e8e4ea] justify-center items-center"
+  >
+  
+    {
+        navItems.map((link) => (
+            <a
+                class="relative block px-2 py-2 transition hover:text-[#ff9933] dark:hover:text-[#ff9933]"
+                aria-label={link.label}
+                href={link.url}
+            >
+                {link.title}
+            </a>
+        ))
+    }
+  </nav>
+</header>
