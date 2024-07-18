@@ -5,10 +5,11 @@ import Comunidad from '../components/Comunidad.astro';
 import Recursos from '../components/Recursos.astro';
 import Contacto from '../components/Contacto.astro'
 import Newsletter from '../components/Newsletter.astro'
+import UltimoVideo from '../components/UltimoVideo.astro'
 ---
 
 <Layout title="Gonzz Linktree 🔗| Todos mis enlaces de interés, redes sociales y más.">
-	<main>
+	<main class="animate-blurred-fade-in">
 		<SectionContainer>
 			<div class="flex items-center justify-start gap-4 sm:gap-8 mt-36 sm:mt-40">
 				<img 
@@ -33,30 +34,39 @@ import Newsletter from '../components/Newsletter.astro'
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/gonzz.dev/" target="_blank" rel="noopener">
-								<img src="/instagram.svg" alt="GitHub Icon" class="size-8">
-							</a>
-						</li>
-						<li>
 							<a href="#" target="_blank" rel="noopener">
-								<img src="/tiktok.svg" alt="GitHub Icon" class="size-8">
+								<img src="/twitch.svg" alt="GitHub Icon" class="size-8">
 							</a>
 						</li>
-						<li>
-							<a href="https://www.behance.net/gonzz-art" target="_blank" rel="noopener">
-								<img src="/behance.svg" alt="GitHub Icon" class="size-8">
-							</a>
-						</li>
+
 						<li>
 							<a href="https://www.linkedin.com/in/gonzz-dev/" target="_blank" rel="noopener">
 								<img src="/linkedin.svg" alt="GitHub Icon" class="size-8">
 							</a>
 						</li>
+
+						<li>
+							<a href="https://www.behance.net/gonzz-art" target="_blank" rel="noopener">
+								<img src="/behance.svg" alt="GitHub Icon" class="size-8">
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/gonzz.dev/" target="_blank" rel="noopener">
+								<img src="/instagram.svg" alt="GitHub Icon" class="size-8">
+							</a>
+						</li>
+						
 					</ul>
 				</div>
 			</div>
 			<p class="text-[#e8e4ea] text-sm sm:text-lg text-pretty font-normal mt-5 px-4">¡Hola! Soy <span class="text-[#ff9933]">Diseñador Web</span> y actualmente estudio <span class="text-[#ff9933]">Programación</span>. Estoy creando contenido informativo para la comunidad hispanohablante en redes sociales. Aquí podrás encontrar todos mis enlaces de interés. 👇🏽</p>
+
+			<h2 class="text-[#e8e4ea] text-3xl font-semibold mt-10 ml-4">Último Video</h2>
+			<UltimoVideo />
+
 			<Contacto />
+			
 		</SectionContainer>
 	
 		<SectionContainer id="comunidad">
