@@ -1,11 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SectionContainer from '../components/SectionContainer.astro';
 import Comunidad from '../components/Comunidad.astro';
+import Contacto from '../components/Contacto.astro';
+import Layout from '../layouts/Layout.astro';
 import Recursos from '../components/Recursos.astro';
-import Contacto from '../components/Contacto.astro'
-import Newsletter from '../components/Newsletter.astro'
-import UltimoVideo from '../components/UltimoVideo.astro'
+import SectionContainer from '../components/SectionContainer.astro';
+import UltimoVideo from '../components/UltimoVideo.astro';
 ---
 
 <Layout title="Gonzz Linktree 🔗| Todos mis enlaces de interés, redes sociales y más.">
@@ -28,14 +27,10 @@ import UltimoVideo from '../components/UltimoVideo.astro'
 								<img src="/github.svg" alt="GitHub Icon" class="size-8">
 							</a>
 						</li>
+
 						<li>
 							<a href="https://twitter.com/gonzz_dev" target="_blank" rel="noopener">
 								<img src="/twitter.svg" alt="GitHub Icon" class="size-8">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank" rel="noopener">
-								<img src="/twitch.svg" alt="GitHub Icon" class="size-8">
 							</a>
 						</li>
 
@@ -56,11 +51,18 @@ import UltimoVideo from '../components/UltimoVideo.astro'
 								<img src="/instagram.svg" alt="GitHub Icon" class="size-8">
 							</a>
 						</li>
+
+												
+						<li>
+							<a href="mailto:contact@gonzz.dev" target="_blank" rel="noopener">
+								<img src="/mail.svg" alt="GitHub Icon" class="size-8">
+							</a>
+						</li>
 						
 					</ul>
 				</div>
 			</div>
-			<p class="text-[#e8e4ea] text-sm sm:text-lg text-pretty font-normal mt-5 px-4">¡Hola! Soy <span class="text-[#ff9933]">Diseñador Web</span> y actualmente estudio <span class="text-[#ff9933]">Programación</span>. Estoy creando contenido informativo para la comunidad hispanohablante en redes sociales. Aquí podrás encontrar todos mis enlaces de interés. 👇🏽</p>
+			<p class="text-[#e8e4ea] text-sm sm:text-lg text-pretty font-normal mt-5 px-4">¡Hola! Soy <span class="text-[#ff9933]">Diseñador</span> y actualmente estudio <span class="text-[#ff9933]">programación</span>. Estoy creando contenido informativo para la comunidad hispanohablante en redes sociales. Aquí podrás encontrar todos mis enlaces de interés. 👇🏽</p>
 
 			<h2 class="text-[#e8e4ea] text-3xl font-semibold mt-10 ml-4">Último Video</h2>
 			<UltimoVideo />
@@ -79,10 +81,6 @@ import UltimoVideo from '../components/UltimoVideo.astro'
 			<Recursos />
 		</SectionContainer>
 	
-		<SectionContainer id="newsletter">
-			<h2 class="text-[#e8e4ea] text-3xl font-semibold mt-10 ml-4">Newsletter</h2>
-			<Newsletter />
-		</SectionContainer>
 	</Layout>
 	</main>	
 
